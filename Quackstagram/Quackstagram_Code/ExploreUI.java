@@ -24,7 +24,8 @@ public class ExploreUI extends JFrame {
     private static final int NAV_ICON_SIZE = 20; // Size for navigation icons
     private static final int IMAGE_SIZE = WIDTH / 3; // Size for each image in the grid
 
-    //Constructor: Sets the page title, height, minimum height, Operations to run the UI.
+    // Constructor: Sets the page title, height, minimum height, Operations to run
+    // the UI.
     public ExploreUI() {
         setTitle("Explore");
         setSize(WIDTH, HEIGHT);
@@ -34,7 +35,8 @@ public class ExploreUI extends JFrame {
         initializeUI();
     }
 
-    //Clears the current content and restarts it - Common in all other UI related classes
+    // Clears the current content and restarts it - Common in all other UI related
+    // classes
     private void initializeUI() {
 
         getContentPane().removeAll(); // Clear existing components
@@ -60,9 +62,7 @@ public class ExploreUI extends JFrame {
         JPanel searchPanel = new JPanel(new BorderLayout());
         JTextField searchField = new JTextField(" Search Users");
         searchPanel.add(searchField, BorderLayout.CENTER);
-        searchPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, searchField.getPreferredSize().height)); // Limit
-                                                                                                             // the
-                                                                                                             // height
+        searchPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, searchField.getPreferredSize().height)); // Limit the height
 
         // Image Grid
         JPanel imageGridPanel = new JPanel(new GridLayout(0, 3, 2, 2)); // 3 columns, auto rows
