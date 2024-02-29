@@ -56,6 +56,7 @@ public class ExploreUI extends JFrame {
 
     }
 
+    //Separate the UI and the Logic of this function
     private JPanel createMainContentPanel() {
         // Create the main content panel with search and image grid
         // Search bar at the top
@@ -99,6 +100,7 @@ public class ExploreUI extends JFrame {
         return mainContentPanel;
     }
 
+    //Change InstagramProfile UI to take care of only one function rather than 2
     private JPanel createHeaderPanel() {
 
         // Header Panel (reuse from InstagramProfileUI or customize for home page)
@@ -113,6 +115,7 @@ public class ExploreUI extends JFrame {
         return headerPanel;
     }
 
+    //Maybe create an independent class that is in control of the UI for the Navigation Bar
     private JPanel createNavigationPanel() {
         // Create and return the navigation panel
         // Navigation Bar
