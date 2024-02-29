@@ -15,6 +15,8 @@ import java.util.stream.Stream;
 
 public class InstagramProfileUI extends JFrame {
 
+    //Test
+
     private static final int WIDTH = 300;
     private static final int HEIGHT = 500;
     private static final int PROFILE_IMAGE_SIZE = 80; // Adjusted size for the profile image to match UI
